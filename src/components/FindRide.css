@@ -1,0 +1,59 @@
+.findaride h1 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(5, 71, 82);
+    font-weight: 500;
+    line-height: 1.06;
+    margin-bottom: 40px;
+}
+
+.leavingfromto {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 54px;
+    padding: 0px 16px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 16px;
+    color: rgb(5, 71, 82);
+    font-size: 16px;
+    line-height: 54px;
+    text-decoration: none;
+}
+
+.pb-m {
+    padding-bottom: 8px !important;
+}
+
+.text-lightMidnightGreen {
+    color: #708c91 !important;
+    text-decoration: none !important;
+    font-size: 20px;
+}
+
+.adddayandpassanger {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 60px;
+
+}
+
+.dayandpassanger {
+    margin-top: 33px;
+}
+
+.dayandpassanger span {
+    color: rgb(0, 175, 245);
+    font-size: 22px;
+    line-height: 20px;
+}
+
+.forlinehrfindride>hr {
+    border: none;
+    background-color: rgb(237, 237, 237);
+    height: 1px;
+    margin: 0px;
+
+
+
+}
