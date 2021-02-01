@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #fff;
+    color: rgb(0, 175, 245);
+
+}
+
+
+
+.logo {
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+.home,
+.findride,
+.offerride,
+.signup,
+.login {
+    text-decoration: none;
+    color: rgb(0, 175, 245);
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+li#findride,
+li#offerride {
+    display: flex;
+    justify-content: space-between;
+}
+
+#findridesvg {
+    margin-right: 12px;
+}
+
+#offerridesvg {
+    margin-right: 12px;
+}
+
+.logosvgfortab {
+    display: none;
+}
+
+
+@media (max-width: 991px) {
+    .logosvgfortab {
+        display: block;
+    }
+
+    .home,
+    .signup,
+    .login {
+        display: none;
+    }
+
+    p#findridepara,
+    p#offerridepara {
+        display: none;
+    }
+
+    h3.logo {
+        position: relative;
+        left: 41%;
+    }
+
+   
+
+    .findride,
+    .offerride {
+        padding: 10px 6px;
+        margin: 0;
+    }
+
+    path#mylogo {
+        display: none;
+    }
+
+}
