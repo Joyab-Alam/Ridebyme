@@ -80,7 +80,7 @@ li#offerride {
         left: 41%;
     }
 
-   
+
 
     .findride,
     .offerride {
@@ -92,4 +92,7 @@ li#offerride {
         display: none;
     }
 
+    .navbar{
+        margin: 0 15px;
+    }
 }

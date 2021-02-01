@@ -1,0 +1,83 @@
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 662px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.loginwith {
+    margin-top: 16px;
+}
+
+.LoginForm h1 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(5, 71, 82);
+    font-weight: 500;
+    line-height: 1.06;
+}
+
+div#loginwithfacebook {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+
+}
+
+.loginparent {
+    display: flex;
+}
+
+.LoginCOntent {
+    color: rgb(5, 71, 82);
+    font-size: 22px;
+}
+
+div#loginwithfacebook:hover {
+    cursor: pointer;
+    background: rgb(237, 237, 237);
+
+}
+
+.forlinehr {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+.forlinehr>hr {
+    border: none;
+    background-color: rgb(237, 237, 237);
+    height: 1px;
+    margin: 0px;
+}
+
+.facebookIcon {
+    margin-right: 10px;
+}
+
+.container.newsignup p {
+    color: rgb(5, 71, 82);
+    font-size: 20px;
+}
+
+.container.newsignup a {
+    color: rgb(0, 175, 245);
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+@media (max-width: 767px) {
+    .LoginCOntent {
+        font-size: 17px;
+    }
+
+    .LoginForm h1{
+        font-size: 25px;
+    }
+}
