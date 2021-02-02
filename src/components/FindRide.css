@@ -57,3 +57,14 @@
 
 
 }
+
+.LoginForm>h2 {
+    color: rgb(5, 71, 82);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.06;
+    text-align: left;
+    margin-top: 109px;
+    margin-left: 15px;
+    margin-bottom: 31px;
+}
