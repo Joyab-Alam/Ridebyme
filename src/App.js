@@ -6,6 +6,9 @@ import OfferRide from './components/OfferRide';
 import SignUp from './components/SignUp';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
+import  LoginWithMobile from './components/LoginMobile';
+import SignupWithMob from './components/SignupWithMob';
+import ForgotPass from './components/ForgotPass';
 const App = () =>{
   return (
     <Router>
@@ -26,6 +29,16 @@ const App = () =>{
      <Route path='/login' component={Login} exact>
        <Login/>
      </Route>
+      <Route path='/loginwithemobile' component={ LoginWithMobile} exact>
+       <LoginWithMobile/>
+     </Route>
+      <Route path='/signupwithemobile' component={SignupWithMob} exact>
+       <SignupWithMob/>
+     </Route>
+      <Route path='/forgotpass' component={ForgotPass} exact>
+       <ForgotPass/>
+     </Route>
+     
    </Switch>
    </Router>
   );

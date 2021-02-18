@@ -9,6 +9,7 @@ const SignUp = () =>{
                     <h1>How do you want to sign up?</h1>
                     <div className="loginwith">
                         <div className="LoginWithFb">
+                          
                             <div id="loginwithfacebook">
                                 <div className="LoginCOntent">Continue with Facebook</div>
                                <div className="loginparent">
@@ -18,6 +19,7 @@ const SignUp = () =>{
                                 <div className="iconarrow"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="kirk-icon sc-bwzfXH gpfbbh" width="24" height="24" aria-hidden="true"><polyline fill="none" stroke="#708C91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="9 18 15 12 9 6"></polyline></svg></div>
                             </div>
                         </div>
+                      
                         </div>
                     </div>
                   <div className="forlinehr"> <hr/></div>
@@ -25,17 +27,19 @@ const SignUp = () =>{
                
                     <div className="loginwith">
                         <div className="LoginWithFb">
+                         <a href="/signupwithemobile">
                             <div id="loginwithfacebook">
-                                <div className="LoginCOntent">Continue with email</div>
+                                <div className="LoginCOntent">Continue with Mobile Number</div>
                                <div className="loginparent">
                                    
                                 <div className="iconarrow"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="kirk-icon sc-bwzfXH gpfbbh" width="24" height="24" aria-hidden="true"><polyline fill="none" stroke="#708C91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="9 18 15 12 9 6"></polyline></svg></div>
                             </div>
                                </div>
+                               </a>
                         </div>
                     </div>
             </div>
-            <div className="container newsignup"><p>Already a member? <a href="">Log in</a></p></div>
+            <div className="container newsignup"><p>Already a member? <a href="/login">Log in</a></p></div>
             
         </div>
         </div>

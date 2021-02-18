@@ -1,0 +1,56 @@
+.wrapper-input input {
+    appearance: none;
+    border: 0px;
+    border-radius: 16px;
+    background-color: rgb(237, 237, 237);
+    color: rgb(5, 71, 82);
+    flex: 1 1 0%;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    caret-color: rgb(0, 175, 245);
+    padding: 16px;
+}
+
+.wrapper-input input:focus {
+    border: none;
+    outline: none;
+}
+
+.pt-xl {
+    padding-top: 24px !important;
+}
+
+.cPtbgo {
+    white-space: pre-line;
+    color: rgb(112, 140, 145);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.iQWkhi.kirk-button-primary {
+    background-color: rgb(0, 175, 245);
+    color: rgb(255, 255, 255);
+    margin-top: 25px;
+}
+
+.iQWkhi {
+    padding: 0px 24px;
+    border: 1px solid transparent;
+    border-radius: 48px;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    font-family: inherit;
+    height: 48px;
+    outline: none;
+}
+
+.wrapper-input {
+    margin-top: 15px;
+}
+
+.kNumBt.kirk-item--highlighted .kirk-text-title {
+    color: rgb(0, 175, 245) !important;
+}
