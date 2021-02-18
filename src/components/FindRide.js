@@ -1,6 +1,7 @@
 import React from 'react';
 import './FindRide.css';
 
+
 const FindRide = () => {
     return(
         <div>
@@ -36,9 +37,60 @@ const FindRide = () => {
                   </div>
                     <div className="forlinehrfindride"> <hr/></div>
                </div>
-                    
+                 <div className="LoginForm">
+                    <h2>Travel for less on these popular routes</h2>
+                    <div className="loginwith">
+                        <div className="LoginWithFb">
+                            <div id="loginwithfacebook">
+                                <div className="LoginCOntent">New Delhi → Chandigarh</div>
+                               <div className="loginparent">
+                                    
+                                <div className="iconarrow"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="kirk-icon sc-bwzfXH gpfbbh" width="24" height="24" aria-hidden="true"><polyline fill="none" stroke="#708C91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="9 18 15 12 9 6"></polyline></svg></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                  <div className="forlinehr"> <hr/></div>
+                   <div className="loginwith">
+                        <div className="LoginWithFb">
+                            <div id="loginwithfacebook">
+                                <div className="LoginCOntent">New Delhi → Chandigarh</div>
+                               <div className="loginparent">
+                                    
+                                <div className="iconarrow"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="kirk-icon sc-bwzfXH gpfbbh" width="24" height="24" aria-hidden="true"><polyline fill="none" stroke="#708C91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="9 18 15 12 9 6"></polyline></svg></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                  <div className="forlinehr"> <hr/></div>
+                   <div className="loginwith">
+                        <div className="LoginWithFb">
+                            <div id="loginwithfacebook">
+                                <div className="LoginCOntent">New Delhi → Chandigarh</div>
+                               <div className="loginparent">
+                                    
+                                <div className="iconarrow"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="kirk-icon sc-bwzfXH gpfbbh" width="24" height="24" aria-hidden="true"><polyline fill="none" stroke="#708C91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="9 18 15 12 9 6"></polyline></svg></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                  <div className="forlinehr"> <hr/></div>
+                   <div className="loginwith">
+                        <div className="LoginWithFb">
+                            <div id="loginwithfacebook">
+                                <div className="LoginCOntent">New Delhi → Chandigarh</div>
+                               <div className="loginparent">
+                                    
+                                <div className="iconarrow"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="kirk-icon sc-bwzfXH gpfbbh" width="24" height="24" aria-hidden="true"><polyline fill="none" stroke="#708C91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="9 18 15 12 9 6"></polyline></svg></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                  <div className="forlinehr"> <hr/></div>
+                </div>
                
            </div>
+         
         </div>
     )
 }

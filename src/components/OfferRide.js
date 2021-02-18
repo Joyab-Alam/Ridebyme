@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Login from './Login';
 
 const OfferRide = () => {
     return(
         <div>
-            OfferRide
+            <Login/>
         </div>
     )
 }
