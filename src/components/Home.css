@@ -322,6 +322,7 @@ a.kNumBt {
 
 .articlesection {
     position: relative;
+    margin-left: 20px;
 
 }
 
@@ -350,7 +351,7 @@ a.kNumBt {
 .smart_simple_seamless {
     display: flex;
     justify-content: space-between;
-    margin: 24px 0px;
+    margin: 24px 20px;
 }
 
 .smart_simple_seamless p {
@@ -387,6 +388,26 @@ a.kNumBt {
     padding: 100px 0px;
     margin-top: 55px;
 }
+
+button#dec_inc1 {
+    border: none;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+button#dec_inc1 span {
+    padding: 10px;
+}
+
+input#homedatepic {
+    font-size: 18px;
+    margin-top: 9px;
+    margin-left: 11px;
+    margin-right: 1px;
+    width: 133px;
+}
+
 
 @media (max-width: 1175px) {
     #homepageheading {
@@ -465,10 +486,18 @@ a.kNumBt {
 
 
 
-@media (min-width: 800px) {
+@media (min-width: 833px) {
     .home-3-columns {
         display: flex;
         justify-content: space-between;
+        margin: 0px 24px;
+    }
+
+}
+
+@media(max-width:832px) {
+    li.mb-m.home-column {
+        margin: 0px 54px 9px 54px;
     }
 }
 
@@ -485,6 +514,11 @@ span.kirk-text.kirk-text-title.sc-gzVnrw.hMBsDE {
 
 }
 
+@media (min-width: 800px) {
+    li.mb-m.home-column {
+        min-width: calc(33% - 48px);
+    }
+}
 
 @media (max-width: 768px) {
     .searchparent {
@@ -496,11 +530,42 @@ span.kirk-text.kirk-text-title.sc-gzVnrw.hMBsDE {
 
     }
 
+    .secondhome_parent {
+        display: block;
+    }
+
+    .presentationimg {
+        margin: 0px 24px;
+    }
+
+    .presentcontent {
+        display: block;
+        text-align: center;
+        max-width: 100%;
+        margin-top: 12px;
+    }
+
     input#leavingfrom,
     input#leavingto,
     input#myDate,
     .child-passanger {
         font-size: 15px;
+    }
+}
+
+@media(max-width:460px) {
+    .articlesection h2 {
+        font-size: 18px;
+    }
+
+    .smart_simple_seamless p {
+        font-size: 14px;
+        line-height: 9px;
+    }
+
+    .smart_simple_seamless span{
+        font-size: 12px;
+        line-height: 4px;
     }
 }
 
@@ -511,11 +576,5 @@ span.kirk-text.kirk-text-title.sc-gzVnrw.hMBsDE {
 
     .searchparent {
         top: 73%;
-    }
-}
-
-@media (min-width: 800px) {
-    li.mb-m.home-column {
-        min-width: calc(33% - 48px);
     }
 }

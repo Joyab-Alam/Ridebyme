@@ -19,7 +19,7 @@ const SignupWithMob =() =>{
                 </div>
                 <p class="pt-xl"><span class="sc-htoDjs sc-hqyNC cPtbgo">When I'm subscribed, I can opt out anytime by contacting Company Name or via the link in the newsletter.</span></p>
 
-                <button id="continue_btn" class="kirk-button kirk-button-primary sc-chPdSV iQWkhi" type="submit">Continue</button>
+               <a  href='/enterdetails'> <button id="continue_btn" class="kirk-button kirk-button-primary sc-chPdSV iQWkhi" type="submit">Continue</button></a>
                
        </div>
         </>

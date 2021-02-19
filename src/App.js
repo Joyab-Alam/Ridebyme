@@ -9,6 +9,10 @@ import Navbar from './components/Navbar/Navbar';
 import  LoginWithMobile from './components/LoginMobile';
 import SignupWithMob from './components/SignupWithMob';
 import ForgotPass from './components/ForgotPass';
+import EnterDeatils from './components/EnterDetails';
+import SignupDOB from './components/SignupDOB';
+import SelectGender from './components/SelectGender';
+import ShowPassword from './components/Passwordforsignup';
 const App = () =>{
   return (
     <Router>
@@ -37,6 +41,18 @@ const App = () =>{
      </Route>
       <Route path='/forgotpass' component={ForgotPass} exact>
        <ForgotPass/>
+     </Route>
+      <Route path='/enterdetails' component={EnterDeatils} exact>
+       <EnterDeatils/>
+     </Route>
+      <Route path='/signupdob' component={SignupDOB} exact>
+       <SignupDOB/>
+     </Route>
+      <Route path='/registergender' component={SelectGender} exact>
+       <SelectGender/>
+     </Route>
+     <Route path='/registerpassword' component={ShowPassword} exact>
+       <ShowPassword/>
      </Route>
      
    </Switch>

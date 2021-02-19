@@ -68,3 +68,40 @@
     margin-left: 15px;
     margin-bottom: 31px;
 }
+
+.react-datepicker__close-icon::after {
+    background-color: #fff !important;
+    color: rgb(0, 175, 245) !important;
+    height: auto !important;
+}
+
+/* .react-datepicker__close-icon {
+    right: 59px !important;
+} */
+
+
+input.react-datepicker-ignore-onclickoutside {
+    border: none !important;
+    outline: none !important;
+}
+
+.react-datepicker__input-container input[type="text"] {
+    border: none !important;
+    outline: none !important;
+    cursor: pointer;
+    color: rgb(0, 175, 245);
+    font-size: 22px;
+}
+
+span#inc_num {
+    margin-right: -34px;
+    margin-top: 1px;
+}
+
+button#dec_inc {
+    border: none;
+    background-color: #fff;
+    color: rgb(0, 175, 245);
+    outline: none;
+    cursor: pointer;
+}

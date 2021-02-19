@@ -2,11 +2,18 @@ import React , {useState} from 'react';
 import img1 from "../images/bgimg.svg";
 import img2 from "../images/homedriver.jpg"
 import "./Home.css";
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 const Home =() =>{
      const [num, setNum] = useState(1);
      const incNum = () =>{
+         if(num<10){
          setNum(num+1)
+         }
+         else{
+             setNum(10);
+         }
      }
      const decNum = () =>{
          if(num>1){
@@ -15,12 +22,14 @@ const Home =() =>{
          setNum(1);
      }
      }
-    
+     const [selectDate, setSelectDate] =useState(null)
     return(
 
         <div>
             <div className="mainbgimg">
-            <img id="mainbgimg" src={img1} alt="bgimg"/>
+              <img id="mainbgimg" src={img1} alt="bgimg"/>
+             <div className="mainchild">
+               
             <h1 id="homepageheading">Your ride. Your choice.</h1>
             <div className="container">
                 <div className="searchparent">
@@ -34,11 +43,15 @@ const Home =() =>{
                     </div><hr id="verticalline"/><hr id="verticallinesm"/>
                     <div className="parent-day-passenger">
                         <div className="child-day">
-                             <input type="date" id="myDate"></input>
+                           <DatePicker id="homedatepic" selected={selectDate}
+                            onChange={date => setSelectDate(date)} 
+                            placeholderText='Date'
+                            minDate={new Date()}
+                            isClearable/>
                              
                         </div> <hr id="verticallineused"/>
                         <div className="child-passanger">
-                           <p> <button onClick={decNum} >-</button> {num} Passenger<button onClick={incNum}>+</button></p>
+                           <p> <button id="dec_inc1" onClick={decNum} ><span>-</span></button> {num} Passenger<button id="dec_inc1" onClick={incNum}><span>+</span></button></p>
                         </div>
                     </div>
                     <div className="search-ride">
@@ -47,6 +60,7 @@ const Home =() =>{
                 </div>
                
             </div>
+             </div>
              
             </div>
             <div className="secondhome_parent">
