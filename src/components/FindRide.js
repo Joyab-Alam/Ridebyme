@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './FindRide.css';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+
+
 
 
 const FindRide = () => {
+     const [num, setNum] = useState(1);
+     const incNum = () =>{
+         if(num<10){
+         setNum(num+1)
+         }
+         else{
+             setNum(10);
+         }
+     }
+     const decNum = () =>{
+         if(num>1){
+          setNum(num-1)
+         } else{
+         setNum(1);
+     }
+     }
+      const [selectDate, setSelectDate] =useState(null)
     return(
         <div>
            <div className="container">
@@ -10,32 +31,35 @@ const FindRide = () => {
                     <h1>Find a ride</h1>
                </div>
                <div class="relative">
-               <div class="pb-m">
-               <a class="kirk-uneditableTextField" aria-labelledby="SearchFormDispatchVoice" href="/">
-               <div class="sc-gGBfsJ leavingfromto">
-               <div class="kirk-uneditableTextField-label kirk-uneditableTextField-label--ellipsis">
-               <span class="text-lightMidnightGreen">Leaving from</span>
-               </div></div></a></div>
-               <div class="pb-m">
-               <a class="kirk-uneditableTextField" href="/">
-               <div class="sc-gGBfsJ leavingfromto">
-               <div class="kirk-uneditableTextField-label kirk-uneditableTextField-label--ellipsis">
-               <span class="text-lightMidnightGreen">Going to</span></div></div></a></div></div>
+                <div className="wrapper-input">
+                      <input type="text" placeholder="Leaving From" name="form" autocorrect="off" />
+                    </div>
+                    <div className="wrapper-input">
+                      <input type="text" placeholder="Going To" name="lform" autocorrect="off" />
+                    </div>
                <div className="dayandpassanger">
                  <div className="forlinehrfindride"> <hr/></div>
                    <div className="adddayandpassanger">
-                   
-                   <a className="searchforday" href="/">
+                    <DatePicker selected={selectDate}
+                    onChange={date => setSelectDate(date)}
+                     
+                     placeholderText='Date'
+                     minDate={new Date()}
+                     isClearable
+                    />
+                   {/* <a className="searchforday" href="">
                        <span id="usedtoaddday">Today</span>
-                   </a>
+                   </a> */}
                   
                   
-                  
-                        <a className="noofpassenger" href="/">
-                       <span id="startingsetone">1 Passenger</span>
-                   </a>
+                        <button id="dec_inc" onClick={decNum} ><span>-</span></button> <span id="inc_num">{num} </span> <a className="noofpassenger" href="">
+                       <span id="startingsetone">Passenger</span>
+                   </a><button  id="dec_inc" onClick={incNum}><span>+</span></button>
+                       
                   </div>
+                  
                     <div className="forlinehrfindride"> <hr/></div>
+                    <a href=""> <button id="continue_btn" class="kirk-button kirk-button-primary sc-chPdSV iQWkhi" type="submit">Search</button></a>
                </div>
                  <div className="LoginForm">
                     <h2>Travel for less on these popular routes</h2>
@@ -91,6 +115,7 @@ const FindRide = () => {
                
            </div>
          
+        </div>
         </div>
     )
 }

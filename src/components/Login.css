@@ -26,6 +26,10 @@ div#loginwithfacebook {
 
 }
 
+.LoginWithFb a {
+    text-decoration: none;
+}
+
 .loginparent {
     display: flex;
 }
@@ -78,7 +82,7 @@ div#loginwithfacebook:hover {
         font-size: 17px;
     }
 
-    .LoginForm h1{
+    .LoginForm h1 {
         font-size: 25px;
     }
 }
