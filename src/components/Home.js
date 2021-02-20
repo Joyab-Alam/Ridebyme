@@ -47,7 +47,7 @@ const Home =() =>{
                             onChange={date => setSelectDate(date)} 
                             placeholderText='Date'
                             minDate={new Date()}
-                            isClearable/>
+                            />
                              
                         </div> <hr id="verticallineused"/>
                         <div className="child-passanger">

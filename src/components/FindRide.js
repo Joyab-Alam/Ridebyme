@@ -45,16 +45,16 @@ const FindRide = () => {
                      
                      placeholderText='Date'
                      minDate={new Date()}
-                     isClearable
                     />
                    {/* <a className="searchforday" href="">
                        <span id="usedtoaddday">Today</span>
                    </a> */}
                   
-                  
+                  <div className="hello123">
                         <button id="dec_inc" onClick={decNum} ><span>-</span></button> <span id="inc_num">{num} </span> <a className="noofpassenger" href="">
                        <span id="startingsetone">Passenger</span>
                    </a><button  id="dec_inc" onClick={incNum}><span>+</span></button>
+                   </div>
                        
                   </div>
                   

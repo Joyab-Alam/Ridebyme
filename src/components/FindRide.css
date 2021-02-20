@@ -94,7 +94,7 @@ input.react-datepicker-ignore-onclickoutside {
 }
 
 span#inc_num {
-    margin-right: -34px;
+
     margin-top: 1px;
 }
 
@@ -104,4 +104,20 @@ button#dec_inc {
     color: rgb(0, 175, 245);
     outline: none;
     cursor: pointer;
+    margin: 0px 10px;
+}
+
+@media(max-width:560px) {
+    .react-datepicker__input-container input[type="text"] {
+        font-size: 15px;
+        max-width: 100px;
+    }
+
+    .adddayandpassanger {
+        margin: 30px 20px;
+    }
+
+    .adddayandpassanger span{
+        font-size: 20px;
+    }
 }

@@ -5,9 +5,9 @@ const Login =() =>{
     return(
         <div>
             <div className="container">
-                <div className="LoginForm">
+                 <div className="LoginForm">
                     <h1>How do you want to log in?</h1>
-                    <div className="loginwith">
+                    {/* <div className="loginwith">
                         <div className="LoginWithFb">
                             <div id="loginwithfacebook">
                                 <div className="LoginCOntent">Continue with Facebook</div>
@@ -19,9 +19,9 @@ const Login =() =>{
                             </div>
                                </div>
                         </div>
-                    </div>
-                  <div className="forlinehr"> <hr/></div>
-                </div>
+                    </div> */}
+                  {/* <div className="forlinehr"> <hr/></div> */}
+                </div> 
                
                     <div className="loginwith">
                         <div className="LoginWithFb">
@@ -37,7 +37,7 @@ const Login =() =>{
                         </div>
                     </div>
             </div>
-            <div className="container newsignup"><p>Not a member yet? <a href="/signup">Sign up</a></p></div>
+            {/* <div className="container newsignup"><p>Not a member yet? <a href="/signup">Sign up</a></p></div> */}
             
         </div>
     )
