@@ -1,0 +1,27 @@
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(5, 71, 82);
+    font-weight: 500;
+    line-height: 1.06;
+    margin-bottom: 40px;
+}
+
+
+
+#profile_img_icon {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    max-width: 73px;
+    border-radius: 50%;
+}
+
+input#input {
+    display: none;
+}
+
+.dob_gender {
+    display: flex;
+    justify-content: space-between;
+}

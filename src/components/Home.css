@@ -558,12 +558,16 @@ span.kirk-text.kirk-text-title.sc-gzVnrw.hMBsDE {
         font-size: 18px;
     }
 
+    li.mb-m.home-column {
+        margin: 0px 15px 9px 15px;
+    }
+
     .smart_simple_seamless p {
         font-size: 14px;
         line-height: 9px;
     }
 
-    .smart_simple_seamless span{
+    .smart_simple_seamless span {
         font-size: 12px;
         line-height: 4px;
     }

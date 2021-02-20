@@ -13,6 +13,7 @@ import EnterDeatils from './components/EnterDetails';
 import SignupDOB from './components/SignupDOB';
 import SelectGender from './components/SelectGender';
 import ShowPassword from './components/Passwordforsignup';
+import Profile from './components/Profile'
 const App = () =>{
   return (
     <Router>
@@ -45,15 +46,18 @@ const App = () =>{
       <Route path='/enterdetails' component={EnterDeatils} exact>
        <EnterDeatils/>
      </Route>
-      <Route path='/signupdob' component={SignupDOB} exact>
+      <Route path='/profile' component={Profile} exact>
+       <Profile/>
+     </Route>
+      {/* <Route path='/signupdob' component={SignupDOB} exact>
        <SignupDOB/>
-     </Route>
-      <Route path='/registergender' component={SelectGender} exact>
+     </Route> */}
+      {/* <Route path='/registergender' component={SelectGender} exact>
        <SelectGender/>
-     </Route>
-     <Route path='/registerpassword' component={ShowPassword} exact>
+     </Route> */}
+     {/* <Route path='/registerpassword' component={ShowPassword} exact>
        <ShowPassword/>
-     </Route>
+     </Route> */}
      
    </Switch>
    </Router>
