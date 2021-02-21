@@ -4,6 +4,7 @@ import img2 from "../images/homedriver.jpg"
 import "./Home.css";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import GoogleMap from '../components/GoogleMap';
 
 const Home =() =>{
      const [num, setNum] = useState(1);
@@ -35,10 +36,12 @@ const Home =() =>{
                 <div className="searchparent">
                     <div className="searchcityfrom">
                          <input type="text" id="leavingfrom"  placeholder="Leaving from.."/>
+                         <GoogleMap/>
                         
                     </div> <hr id="verticalline"/> <hr id="verticallinesm"/>
                      <div className="searchcityto">
                          <input type="text" id="leavingto" placeholder="Going to.." />
+                      
                          
                     </div><hr id="verticalline"/><hr id="verticallinesm"/>
                     <div className="parent-day-passenger">

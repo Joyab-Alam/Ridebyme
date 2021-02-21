@@ -1,10 +1,17 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
+import '../LoginMobile';
+import '../Profile';
 
 
+
+
+
+ 
 const Navbar = () => {
     
+     const [show, setShow]= useState(false)
     return(
         <nav className="navbar">
         <div className="logosvgfortab"><a href="/login"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="kirk-icon sc-bwzfXH bzGLQz" width="24" height="24" aria-hidden="true"><g fill="none" stroke="#00AFF5" stroke-width="1"><circle cx="12" cy="12" r="10"></circle><path d="M6.67 20.5A5 5 0 0 1 11 18h2a5 5 0 0 1 4.34 2.52"></path><rect width="7" height="9" x="8.5" y="6.5" rx="3.5"></rect></g></svg></a></div>
@@ -12,22 +19,22 @@ const Navbar = () => {
         <div class="blank"></div>
         <ul className="nav-links">
         
-         <Link to='/findride' className='findride'>
+         {show?<Link to='/findride' className='findride'>
              <li id="findride">
              <li id='findridesvg'><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="kirk-icon sc-bwzfXH bzGLQz mr-m" width="24" height="24" aria-hidden="true"><g fill="none" stroke="#00AFF5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="22" y1="22" x2="16.4" y2="16.4"></line><circle cx="10" cy="10" r="9"></circle></g></svg></li><p id="findridepara">Find Ride</p></li>
-         </Link>
-          <Link to='/offerride' className='offerride'>
+         </Link>:null}
+          {show?<Link to='/offerride' className='offerride'>
              <li id="offerride"><li id="offerridesvg"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="kirk-icon sc-bwzfXH bzGLQz mr-m" width="24" height="24" aria-hidden="true"><g fill="none" stroke="#00AFF5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><circle cx="12" cy="12" r="11"></circle><path d="M12 7v10M17 12H7"></path></g></svg></li><p id="offerridepara">Offer Ride</p></li>
-         </Link>
+         </Link>:null}
           <Link to='/login' className='signup'>
              <li>Sign Up</li>
          </Link>
           <Link to='/login' className='login'>
              <li>Login</li>
          </Link>
-         <Link to='/profile' className="profile">
+         {show?<Link to='/profile' className="profile">
                 <li><img id="profile_img_icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9ImJhY2tncm91bmQ6I2RkZCI+PHBhdGggZmlsbD0iI0RERCIgZD0iTTAgMGg0OHY0OEgweiIvPjxwYXRoIGQ9Ik0yNCAyOWMyLjM3IDAgNS4yNC4yNDggNy42MTEuNzQ1IDMuODk5LjU0NCA2LjU4IDMuMTQzIDcuNzQgNy4wNzNDMzUuNjg1IDQxLjIwOCAzMC4xNjkgNDQgMjQgNDRjLTYuMTggMC0xMS43MDYtMi44MDMtMTUuMzc1LTcuMjA4IDEuMTA2LTMuNzk0IDMuNjgtNi4yMzcgNy43NjQtNy4wNDdDMTguNzU5IDI5LjI0OCAyMS42MjkgMjkgMjQgMjl6bTAtMjFhOCA4IDAgMDE4IDh2MmE4IDggMCAxMS0xNiAwdi0yYTggOCAwIDAxOC04eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==" alt=""/></li>
-         </Link>
+         </Link>:null}
          
 
 

@@ -27,7 +27,7 @@ const LoginWithMobile =() =>{
                 
                 {btnshow?
                 <a  onClick={()=>btnsetShow(false)}><button  onClick={()=>setShow(true)} id="continue_btn" class="kirk-button kirk-button-primary sc-chPdSV iQWkhi" type="submit">Genrate OTP</button></a>:null}
-                <a href="/"> {show?<button  id="continue_btn" class="kirk-button kirk-button-primary sc-chPdSV iQWkhi" type="submit">Continue</button>:null}</a>
+                <a href="/profile"> {show?<button  id="continue_btn" class="kirk-button kirk-button-primary sc-chPdSV iQWkhi" type="submit">Continue</button>:null}</a>
                
        </div>
         </>
