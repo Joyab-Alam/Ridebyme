@@ -45,6 +45,7 @@ const FindRide = () => {
                      
                      placeholderText='Date'
                      minDate={new Date()}
+
                     />
                    {/* <a className="searchforday" href="">
                        <span id="usedtoaddday">Today</span>

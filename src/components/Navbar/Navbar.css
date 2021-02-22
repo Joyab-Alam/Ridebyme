@@ -13,7 +13,8 @@
     color: rgb(0, 175, 245);
 
 }
-#profile_img_icon{
+
+#profile_img_icon {
     border-radius: 50%;
 }
 
@@ -67,6 +68,10 @@ li#offerride {
         display: block;
     }
 
+    #profile_img_icon {
+        display: none;
+    }
+
     .home,
     .signup,
     .login {
@@ -95,7 +100,7 @@ li#offerride {
         display: none;
     }
 
-    .navbar{
+    .navbar {
         margin: 0 15px;
     }
 }

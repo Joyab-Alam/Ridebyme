@@ -564,21 +564,25 @@ span.kirk-text.kirk-text-title.sc-gzVnrw.hMBsDE {
 
     .smart_simple_seamless p {
         font-size: 14px;
-        line-height: 9px;
+        line-height: 16px;
     }
 
-    .smart_simple_seamless span {
-        font-size: 12px;
-        line-height: 4px;
-    }
-}
-
-@media (max-width: 392px) {
-    #homepageheading {
-        font-size: 15px;
+    .iQWkhi.kirk-button-unstyled {
+        margin: 14px 0px;
     }
 
-    .searchparent {
-        top: 73%;
+        .smart_simple_seamless span {
+            font-size: 12px;
+            line-height: 4px;
+        }
     }
-}
+
+    @media (max-width: 392px) {
+        #homepageheading {
+            font-size: 15px;
+        }
+
+        .searchparent {
+            top: 73%;
+        }
+    }
